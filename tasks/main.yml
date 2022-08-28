@@ -1,0 +1,14 @@
+---
+- name: Install GoLang
+  unarchive:
+    src: 'https://golang.org/dl/go{{ go_version }}.linux-amd64.tar.gz'
+    dest: '/usr/local/'
+    remote_src: yes
+
+- name: GoLang environment
+  copy:
+    src: 'go.sh'
+    dest: '/etc/profile.d/go.sh'
+    mode: 0644
+    owner: 'root'
+    group: 'root'

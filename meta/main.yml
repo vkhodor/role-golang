@@ -1,0 +1,12 @@
+galaxy_info:
+  author: Victor V. Khodorchenko
+  description: GoLang Role
+  company: JarSoft
+
+  license: MIT
+
+  min_ansible_version: 2.9
+
+  galaxy_tags: []
+
+dependencies:
